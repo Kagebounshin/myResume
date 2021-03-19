@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Nunito", sans-serif;
+    background: #000000d9;
+    color: #d8d8d8;
+}
+
+/*---------------------Background Colors-----------------------------*/
+
+
+/*---------------------Containers-----------------------------*/
+
+.home-container {
+    min-height: 100vh;
+    color: #d8d8d8;
+}
+
+.home-container h1 {
+   margin: 3rem;
+}
+
+
+.hero-container {
+    background-color: #d8d8d8;
+    margin: 3rem;
+    color: teal;
+}
+
+.about-container {
+    min-height: 100vh;
+}
+
+/*---------------------NAVBAR-----------------------------*/
+
+.navbar-brand {
+    font-weight: 700;
+    color: #d8d8d8;
+}
+.navbar-custom{
+    color: #d8d8d8;
+}
+
+.navbar-custom:hover,
+.navbar-brand:hover {
+    color: #d8d8d8d9;
+    transition: 400ms ease-in-out;
+}
+
+.custom-toggler.navbar-toggler {
+
+}
+
+.custom-toggler .navbar-toggler-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(216, 216, 216)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+
+
+.comma-color {
+    color: teal;
+}
+
+.period-color {
+    color: palevioletred;
+}
+
+
+/*---------------------MEDIA-----------------------------*/
+
+@media (max-width: 575.98px) {
+    .home-container h1 {
+        font-size: 2rem; 
+        margin: 3rem;
+    }
+}
+
+@media (min-width: 576px) { 
+    .home-container h1 {
+        font-size: 3rem; 
+        margin: 3rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .home-container h1 {
+        font-size: 4rem; 
+        margin: 3rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    
+}
+
+
+@media (min-width: 1200px) {
+    .home-container h1 {
+        font-size: 5rem;
+        
+    }
+
+}
+
+
+@media (min-width: 1400px) {
+
+}
+
+
+
+/*--------------------ARROW ANIMATION-------------*/
+
+.arrow{
+    position: absolute;
+    margin-top: 1rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-bottom: 5px solid teal;
+    border-right: 5px solid teal;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px,-10px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+}
