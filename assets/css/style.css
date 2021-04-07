@@ -2,11 +2,21 @@
 
 body {
     font-family: "Nunito", sans-serif;
-    background: #000000d9;
     color: #d8d8d8;
 }
 
+
+
 /*---------------------Background Colors-----------------------------*/
+
+.bg-color-home {
+    background-color: #000000d9;
+}
+
+.bg-color-about{
+    background-color: white;
+}
+
 
 
 /*---------------------Containers-----------------------------*/
@@ -22,9 +32,10 @@ body {
 
 
 .hero-container {
-    background-color: #d8d8d8;
     margin: 3rem;
     color: teal;
+    width: 100%;
+
 }
 
 .about-container {
@@ -37,74 +48,10 @@ body {
     font-weight: 700;
     color: #d8d8d8;
 }
-.navbar-custom{
-    color: #d8d8d8;
+
+.bg-light {
+    background-color: #000000d9!important; 
 }
-
-.navbar-custom:hover,
-.navbar-brand:hover {
-    color: #d8d8d8d9;
-    transition: 400ms ease-in-out;
-}
-
-.custom-toggler.navbar-toggler {
-
-}
-
-.custom-toggler .navbar-toggler-icon {
-   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(216, 216, 216)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.typewriter {
-    display: inline-block;
-}
-
-.typewriterText {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 4px solid teal;
-    box-sizing: border-box;
-    animation: typing 2.5s steps(26, end),
-               blink .75s step-end infinite;
-}
-
-@keyframes typing {
-    from{width: 0%}
-    to {width: 100%}
-}
-
-@keyframes blink {
-    form, to { border-color: transparent }
-    50% { border-color: teal; }
-}
-
-
-/* .typewriter h1 {
-    overflow: hidden;
-    border-right: .15em solid teal;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation:
-        typing 3.5s steps(30, end),
-        blink-caret .75s step-end infinite;
-
-}
-
-@keyframes typing {
-    from {width: 0;}
-    to {width: 100%;}
-}
-
-@keyframes blink-caret {
-    from, to {border-color: transparent;}
-    50% {border-color: teal;}
-} */
-
-
-
-
 
 .comma-color {
     color: teal;
@@ -191,4 +138,51 @@ body {
         opacity: 0;
         transform: rotate(45deg) translate(10px, 10px);
     }
+}
+
+/* SHAPEDIVIDER */
+
+.custom-shape-divider-bottom-1617818986 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    margin-bottom:-5rem;
+}
+
+.custom-shape-divider-bottom-1617818986 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 305px;
+}
+
+.custom-shape-divider-bottom-1617818986 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* SHAPEDIVIDER */
+
+.custom-shape-divider-bottom-1617819865 {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1617819865 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 305px;
+}
+
+.custom-shape-divider-bottom-1617819865 .shape-fill {
+    fill: #000000D9;
 }
